@@ -74,7 +74,7 @@
 
         }
         else { // test mode
-            if (d.properties.a3 === pickedState.a3) {
+            if (d.properties.name === pickedState.name) {
                 updateScore(rightAnswers + 1, wrongAnswers);
                 d3.selectAll('path').attr('fill', "#ccc");
                 d3.select('#' + geoID(d)).attr('fill', "lightgreen");
